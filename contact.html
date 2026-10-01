@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — MONOCHROME & SPACE Journal</title>
+  <meta name="description" content="Get in touch with the editorial team at Monochrome & Space. Inquiries, pitches, and general correspondence.">
+  <link rel="canonical" href="https://www.monochromeandspace.com/contact.html">
+  <meta property="og:title" content="Contact — MONOCHROME & SPACE">
+  <meta property="og:description" content="Reach the editorial team for pitches, collaborations, or questions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.monochromeandspace.com/contact.html">
+  <style>
+    /* ----- RESET & BASE (consistent with main journal) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Georgia, serif;
+      background: #fbfaf8;
+      color: #1e1e1e;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #111;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #e2ddd7;
+      padding-bottom: 0.4rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    a {
+      color: #1e1e1e;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #b0a89e;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+    }
+
+    /* ----- LAYOUT (identical to main) ----- */
+    .site-wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ----- HEADER ----- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid #ddd8d2;
+      margin-bottom: 2rem;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      font-family: 'Georgia', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      border-bottom: none;
+      color: #0e0e0e;
+      line-height: 1.1;
+    }
+
+    .logo span {
+      font-weight: 300;
+      color: #8b7e72;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.8rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #5f554c;
+    }
+
+    .main-nav a {
+      border-bottom: none;
+      color: #5f554c;
+      font-weight: 450;
+    }
+
+    .main-nav a:hover {
+      color: #111;
+      border-bottom: 1px solid #b0a89e;
+    }
+
+    .main-nav a.active {
+      color: #111;
+      border-bottom: 1px solid #1e1e1e;
+      font-weight: 500;
+    }
+
+    /* ----- SEARCH BAR ----- */
+    .search-row {
+      margin-top: 1.25rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #d6d0c9;
+      background: white;
+      border-radius: 30px;
+      padding: 0.2rem 0.2rem 0.2rem 1rem;
+      width: 260px;
+    }
+
+    .search-box input {
+      border: none;
+      background: transparent;
+      padding: 0.5rem 0;
+      font-size: 0.9rem;
+      width: 100%;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .search-box button {
+      background: #1e1e1e;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .search-box button:hover {
+      background: #3a3a3a;
+    }
+
+    /* ----- CONTACT PAGE SPECIFIC ----- */
+    .contact-header {
+      margin: 1rem 0 2.5rem;
+    }
+
+    .contact-header p {
+      font-size: 1.15rem;
+      color: #3d3630;
+      max-width: 70ch;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .contact-form-block {
+      background: #ffffff;
+      border: 1px solid #eae4dd;
+      padding: 2rem 2rem 2.2rem;
+    }
+
+    .contact-form-block h2 {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #e2ddd7;
+      padding-bottom: 0.6rem;
+      font-size: 1.6rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #5f554c;
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      border: 1px solid #d6d0c9;
+      background: #fefdfc;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #a89f96;
+      box-shadow: 0 0 0 3px rgba(176, 168, 158, 0.15);
+    }
+
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235f554c' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 12px;
+    }
+
+    .btn-submit {
+      background: #1e1e1e;
+      color: white;
+      border: none;
+      padding: 0.9rem 2.2rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.15s;
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+
+    .btn-submit:hover {
+      background: #3a3a3a;
+    }
+
+    .contact-info-block {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .info-card {
+      background: #ffffff;
+      border: 1px solid #eae4dd;
+      padding: 1.8rem;
+    }
+
+    .info-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #e6e0d9;
+      padding-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .info-card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+      color: #3d3630;
+    }
+
+    .info-card a {
+      border-bottom: 1px solid #ccc5bd;
+    }
+
+    .info-card a:hover {
+      border-bottom-color: #1e1e1e;
+    }
+
+    .info-detail {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      align-items: flex-start;
+    }
+
+    .info-detail .icon {
+      font-size: 1.2rem;
+      width: 1.8rem;
+      text-align: center;
+      color: #8b7e72;
+      flex-shrink: 0;
+    }
+
+    .info-detail strong {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #5f554c;
+      margin-bottom: 0.1rem;
+    }
+
+    .info-detail span {
+      font-size: 0.95rem;
+      color: #1e1e1e;
+    }
+
+    /* ----- FAQ mini (reusing styles) ----- */
+    .faq-mini {
+      margin-top: 1rem;
+    }
+
+    .faq-mini .faq-item {
+      border-bottom: 1px solid #eee8e1;
+      padding: 0.8rem 0;
+    }
+
+    .faq-mini .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-mini .faq-question {
+      font-size: 0.95rem;
+      font-weight: 500;
+      font-family: Georgia, serif;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-mini .faq-question::after {
+      content: "+";
+      font-size: 1.2rem;
+      color: #8b7e72;
+      transition: transform 0.2s;
+    }
+
+    .faq-mini .faq-item.active .faq-question::after {
+      content: "−";
+    }
+
+    .faq-mini .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: #3d3630;
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+    }
+
+    .faq-mini .faq-item.active .faq-answer {
+      max-height: 200px;
+      padding-top: 0.4rem;
+    }
+
+    /* ----- FOOTER (identical) ----- */
+    .site-footer {
+      border-top: 1px solid #ddd8d2;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #5f554c;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-grid h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      color: #1e1e1e;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid a {
+      border-bottom: none;
+      color: #5f554c;
+    }
+
+    .footer-grid a:hover {
+      color: #111;
+      border-bottom: 1px solid #b0a89e;
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ece7e1;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #8b7e72;
+    }
+
+    /* ----- RESPONSIVE ----- */
+    @media (max-width: 1000px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .search-box {
+        width: 100%;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form-block {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="site-wrapper">
+      <div class="header-inner">
+        <a href="index.html" class="logo">Gathered Form Notes <span>&</span></a>
+        <nav class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </nav>
+      </div>
+      <div class="search-row">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search articles...">
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div class="site-wrapper">
+
+    <!-- Contact intro -->
+    <div class="contact-header">
+      <h1>Contact the Journal</h1>
+      <p>We welcome thoughtful correspondence—story pitches, reader questions, collaboration ideas, and feedback on our published work. Please use the form below or reach the appropriate desk directly. We read every message, though response times may vary.</p>
+    </div>
+
+    <!-- Contact grid: form + info -->
+    <div class="contact-grid">
+      <!-- LEFT: Contact form -->
+      <div class="contact-form-block">
+        <h2>Send a message</h2>
+        <form id="contactForm" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full name *</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address *</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General inquiry</option>
+              <option value="pitch">Story pitch / editorial</option>
+              <option value="collaboration">Collaboration / partnership</option>
+              <option value="feedback">Feedback on an article</option>
+              <option value="press">Press / media request</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your message *</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">Send message</button>
+        </form>
+      </div>
+
+      <!-- RIGHT: Info + mini FAQ -->
+      <div class="contact-info-block">
+        <!-- Direct contacts -->
+        <div class="info-card">
+          <h3>Editorial & general</h3>
+          <div class="info-detail">
+            <div class="icon">✉</div>
+            <div>
+              <strong>General inquiries</strong>
+              <span><a href="mailto:hello@monochromeandspace.com">hello@monochromeandspace.com</a></span>
+            </div>
+          </div>
+          <div class="info-detail">
+            <div class="icon">✎</div>
+            <div>
+              <strong>Pitches & submissions</strong>
+              <span><a href="mailto:pitch@monochromeandspace.com">pitch@monochromeandspace.com</a></span>
+            </div>
+          </div>
+          <div class="info-detail">
+            <div class="icon">◎</div>
+            <div>
+              <strong>Postal address</strong>
+              <span>Monochrome & Space<br>12 Granary Lane, Studio 4<br>London, SE1 2TH, UK</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Response times & social -->
+        <div class="info-card">
+          <h3>Response times</h3>
+          <p>We aim to respond to all messages within <strong>3–5 working days</strong>. For urgent press inquiries, please mark your subject line clearly and we will prioritise.</p>
+          <p style="margin-bottom:0;">Follow us for updates:</p>
+          <p style="margin-top:0.3rem;">
+            <a href="#">Instagram</a> · <a href="#">Pinterest</a> · <a href="#">LinkedIn</a>
+          </p>
+        </div>
+
+        <!-- Mini FAQ -->
+        <div class="info-card">
+          <h3>Quick answers</h3>
+          <div class="faq-mini">
+            <div class="faq-item">
+              <div class="faq-question">Do you accept guest articles?</div>
+              <div class="faq-answer">Yes, we consider pitches from designers, architects, and writers. Please review our editorial guidelines on the About page and send a brief outline to pitch@monochromeandspace.com before writing a full draft.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">Can I republish an article?</div>
+              <div class="faq-answer">We occasionally allow republishing of excerpts with full attribution and a link back. Contact us with details about your platform and the specific article.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">Do you offer design consultations?</div>
+              <div class="faq-answer">No, we are a publishing platform only. Our editors are not available for private consulting, but we can sometimes recommend practitioners.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-grid">
+        <div>
+          <h4>MONOCHROME & SPACE</h4>
+          <p style="max-width: 35ch;">An independent journal of interior design and architecture. We publish in-depth articles for designers, architects, and curious homeowners.</p>
+        </div>
+        <div>
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Furniture</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Editorial Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Monochrome & Space. All rights reserved.</span>
+        <span>Made for readers, not algorithms.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- MINI FAQ TOGGLE (contact page) ---
+      document.querySelectorAll('.faq-mini .faq-item').forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+
+      // --- CONTACT FORM (demo handler) ---
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const message = document.getElementById('message').value.trim();
+
+          if (!name || !email || !message) {
+            alert('Please fill in all required fields (name, email, and message).');
+            return;
+          }
+          if (!email.includes('@') || !email.includes('.')) {
+            alert('Please enter a valid email address.');
+            return;
+          }
+
+          // Demo success
+          alert('Thank you, ' + name + '! Your message has been sent (demo). We will reply to ' + email + ' within 3–5 working days.');
+          contactForm.reset();
+        });
+      }
+
+      // --- SEARCH (demo redirect / alert) ---
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+      if (searchBtn) {
+        searchBtn.addEventListener('click', () => {
+          const q = searchInput.value.trim();
+          if (q) {
+            alert('Search (demo): "' + q + '". On the live site, this would show filtered articles.');
+          } else {
+            alert('Please enter a search term.');
+          }
+        });
+      }
+      if (searchInput) {
+        searchInput.addEventListener('keyup', (e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            searchBtn.click();
+          }
+        });
+      }
+
+      // --- LOGO LINK (fallback to index) ---
+      // Already links to index.html – no JS needed.
+
+    })();
+  </script>
+
+  <!-- Schema.org markup for ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Monochrome & Space",
+    "description": "Reach the editorial team for pitches, collaborations, or general questions.",
+    "url": "https://www.monochromeandspace.com/contact.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Monochrome & Space",
+      "email": "hello@monochromeandspace.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 Granary Lane, Studio 4",
+        "addressLocality": "London",
+        "postalCode": "SE1 2TH",
+        "addressCountry": "UK"
+      }
+    }
+  }
+  </script>
+</body>
+</html>

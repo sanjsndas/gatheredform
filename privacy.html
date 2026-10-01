@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MONOCHROME & SPACE Journal</title>
+  <meta name="description" content="Privacy Policy for Monochrome & Space. Learn how we collect, use, and protect your personal information.">
+  <link rel="canonical" href="https://www.monochromeandspace.com/privacy.html">
+  <meta property="og:title" content="Privacy Policy — MONOCHROME & SPACE">
+  <meta property="og:description" content="How we handle your data at Monochrome & Space.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.monochromeandspace.com/privacy.html">
+  <style>
+    /* ----- RESET & BASE (consistent with main journal) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Georgia, serif;
+      background: #fbfaf8;
+      color: #1e1e1e;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #111;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #e2ddd7;
+      padding-bottom: 0.4rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    a {
+      color: #1e1e1e;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #b0a89e;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+    }
+
+    /* ----- LAYOUT (identical to main) ----- */
+    .site-wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ----- HEADER ----- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid #ddd8d2;
+      margin-bottom: 2rem;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      font-family: 'Georgia', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      border-bottom: none;
+      color: #0e0e0e;
+      line-height: 1.1;
+    }
+
+    .logo span {
+      font-weight: 300;
+      color: #8b7e72;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.8rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #5f554c;
+    }
+
+    .main-nav a {
+      border-bottom: none;
+      color: #5f554c;
+      font-weight: 450;
+    }
+
+    .main-nav a:hover {
+      color: #111;
+      border-bottom: 1px solid #b0a89e;
+    }
+
+    .main-nav a.active {
+      color: #111;
+      border-bottom: 1px solid #1e1e1e;
+      font-weight: 500;
+    }
+
+    /* ----- SEARCH BAR ----- */
+    .search-row {
+      margin-top: 1.25rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #d6d0c9;
+      background: white;
+      border-radius: 30px;
+      padding: 0.2rem 0.2rem 0.2rem 1rem;
+      width: 260px;
+    }
+
+    .search-box input {
+      border: none;
+      background: transparent;
+      padding: 0.5rem 0;
+      font-size: 0.9rem;
+      width: 100%;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .search-box button {
+      background: #1e1e1e;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .search-box button:hover {
+      background: #3a3a3a;
+    }
+
+    /* ----- PRIVACY PAGE SPECIFIC ----- */
+    .privacy-header {
+      margin: 1rem 0 2.5rem;
+    }
+
+    .privacy-header p {
+      font-size: 1.15rem;
+      color: #3d3630;
+      max-width: 70ch;
+    }
+
+    .privacy-content {
+      background: #ffffff;
+      border: 1px solid #eae4dd;
+      padding: 2.5rem 2.5rem 2.8rem;
+      margin-bottom: 4rem;
+    }
+
+    .privacy-content h2 {
+      margin-top: 2.2rem;
+      font-size: 1.7rem;
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content h3 {
+      font-size: 1.25rem;
+      margin: 1.8rem 0 0.8rem;
+      font-weight: 500;
+      color: #2a2a2a;
+    }
+
+    .privacy-content ul, 
+    .privacy-content ol {
+      margin: 0 0 1.5rem 1.8rem;
+      color: #2a2a2a;
+    }
+
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-content strong {
+      color: #111;
+    }
+
+    .privacy-content .last-updated {
+      font-size: 0.9rem;
+      color: #8b7e72;
+      border-bottom: 1px solid #ece7e1;
+      padding-bottom: 1.2rem;
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    .privacy-content .highlight-box {
+      background: #f9f7f4;
+      border-left: 3px solid #b0a89e;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      font-size: 0.98rem;
+      color: #3d3630;
+    }
+
+    .privacy-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.95rem;
+    }
+
+    .privacy-content th {
+      background: #f4f1ed;
+      text-align: left;
+      padding: 0.8rem 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      color: #5f554c;
+      border-bottom: 1px solid #ddd8d2;
+    }
+
+    .privacy-content td {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid #ece7e1;
+      vertical-align: top;
+    }
+
+    /* ----- FOOTER (identical) ----- */
+    .site-footer {
+      border-top: 1px solid #ddd8d2;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #5f554c;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-grid h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      color: #1e1e1e;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid a {
+      border-bottom: none;
+      color: #5f554c;
+    }
+
+    .footer-grid a:hover {
+      color: #111;
+      border-bottom: 1px solid #b0a89e;
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ece7e1;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #8b7e72;
+    }
+
+    /* ----- RESPONSIVE ----- */
+    @media (max-width: 1000px) {
+      .privacy-content {
+        padding: 1.8rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .search-box {
+        width: 100%;
+      }
+
+      .privacy-content {
+        padding: 1.2rem;
+      }
+
+      .privacy-content table {
+        font-size: 0.85rem;
+      }
+
+      .privacy-content th,
+      .privacy-content td {
+        padding: 0.6rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="site-wrapper">
+      <div class="header-inner">
+        <a href="index.html" class="logo">Gathered Form Notes <span>&</span></a>
+        <nav class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </nav>
+      </div>
+      <div class="search-row">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search articles...">
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div class="site-wrapper">
+
+    <!-- Privacy intro -->
+    <div class="privacy-header">
+      <h1>Privacy Policy</h1>
+      <p>We are committed to protecting your privacy and handling your personal data with transparency. This policy explains what information we collect, why we collect it, and how you can exercise your rights.</p>
+    </div>
+
+    <!-- Privacy content card -->
+    <div class="privacy-content">
+      <span class="last-updated">Last updated: 15 January 2025</span>
+
+      <h2>1. Who we are</h2>
+      <p>Monochrome &amp; Space ("we," "us," or "our") operates the website <a href="https://www.monochromeandspace.com">www.monochromeandspace.com</a> and publishes editorial content related to interior design and architecture. We are the data controller responsible for your personal information collected through this site.</p>
+      <p>If you have any questions about this policy or your data, please contact us at <a href="mailto:privacy@monochromeandspace.com">privacy@monochromeandspace.com</a>.</p>
+
+      <h2>2. Information we collect</h2>
+      <p>We collect information that you voluntarily provide to us, as well as certain technical data that is automatically collected when you visit our site.</p>
+
+      <h3>Information you provide directly</h3>
+      <ul>
+        <li><strong>Contact form submissions:</strong> When you use our contact form, we collect your name, email address, subject matter, and the content of your message.</li>
+        <li><strong>Email correspondence:</strong> If you email us directly, we retain the contents of your message and your email address.</li>
+        <li><strong>Newsletter subscriptions (if offered):</strong> If you sign up for our newsletter, we collect your email address and any preferences you indicate.</li>
+        <li><strong>Comments or feedback:</strong> If you submit feedback or comments, we collect the information you provide, including your name and email (if provided).</li>
+      </ul>
+
+      <h3>Information collected automatically</h3>
+      <p>When you visit our website, we may automatically collect certain technical information, including:</p>
+      <ul>
+        <li>IP address (anonymised where required by law)</li>
+        <li>Browser type and version</li>
+        <li>Pages visited and time spent on those pages</li>
+        <li>Referring website or source</li>
+        <li>Device type and operating system</li>
+      </ul>
+      <p>We collect this information using cookies and similar technologies. For more details, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+      <h2>3. How we use your information</h2>
+      <p>We use the information we collect for the following purposes:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Purpose</th>
+            <th>Legal basis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>To respond to your inquiries, pitches, or feedback</td>
+            <td>Legitimate interests / consent</td>
+          </tr>
+          <tr>
+            <td>To send you newsletters if you have opted in</td>
+            <td>Consent</td>
+          </tr>
+          <tr>
+            <td>To improve our website, content, and user experience</td>
+            <td>Legitimate interests</td>
+          </tr>
+          <tr>
+            <td>To comply with legal obligations</td>
+            <td>Legal obligation</td>
+          </tr>
+          <tr>
+            <td>To protect against misuse, fraud, or security threats</td>
+            <td>Legitimate interests</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>4. Sharing your information</h2>
+      <p>We do not sell, rent, or trade your personal information. We may share your data only in the following limited circumstances:</p>
+      <ul>
+        <li><strong>Service providers:</strong> We use trusted third-party services (e.g., email hosting, analytics) that process data on our behalf under strict data processing agreements.</li>
+        <li><strong>Legal requirements:</strong> We may disclose information if required by law, court order, or governmental authority.</li>
+        <li><strong>Business transfers:</strong> In the unlikely event of a merger or acquisition, your data may be transferred as part of the business assets, but this policy would continue to apply.</li>
+      </ul>
+
+      <div class="highlight-box">
+        <p><strong>International transfers:</strong> Some of our service providers may be located outside the UK/EEA. When we transfer data internationally, we ensure appropriate safeguards are in place, such as standard contractual clauses approved by the relevant authorities.</p>
+      </div>
+
+      <h2>5. Data retention</h2>
+      <p>We retain your personal information only as long as necessary to fulfil the purposes for which it was collected, or as required by law. Specifically:</p>
+      <ul>
+        <li>Contact form submissions and email correspondence are kept for up to 24 months, unless a longer retention period is required for legal or editorial reasons.</li>
+        <li>Newsletter subscription data is retained until you unsubscribe or request deletion.</li>
+        <li>Analytics data is retained in an aggregated or anonymised form and does not identify individuals.</li>
+      </ul>
+
+      <h2>6. Your rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Right to access:</strong> Request a copy of the personal information we hold about you.</li>
+        <li><strong>Right to rectification:</strong> Request correction of inaccurate or incomplete data.</li>
+        <li><strong>Right to erasure:</strong> Request deletion of your personal data (subject to certain exceptions).</li>
+        <li><strong>Right to restrict processing:</strong> Request that we limit how we use your data.</li>
+        <li><strong>Right to data portability:</strong> Request transfer of your data to another organisation.</li>
+        <li><strong>Right to object:</strong> Object to processing based on legitimate interests or for direct marketing.</li>
+        <li><strong>Right to withdraw consent:</strong> If processing is based on consent, you may withdraw it at any time.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@monochromeandspace.com">privacy@monochromeandspace.com</a>. We will respond within one month, though this may be extended for complex requests.</p>
+      <p>If you are located in the UK/EEA and believe we have not handled your data properly, you have the right to lodge a complaint with your local supervisory authority (in the UK, the Information Commissioner's Office at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>).</p>
+
+      <h2>7. Security</h2>
+      <p>We take appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. These measures include encrypted connections (HTTPS), access controls, and regular security reviews. However, no method of transmission over the internet is completely secure, and we cannot guarantee absolute security.</p>
+
+      <h2>8. Children's privacy</h2>
+      <p>Our website is not directed at children under the age of 16. We do not knowingly collect personal information from children. If you believe we have inadvertently collected data from a child, please contact us so we can delete it.</p>
+
+      <h2>9. Links to other websites</h2>
+      <p>Our site may contain links to external websites. We are not responsible for the privacy practices or content of those sites. We encourage you to read the privacy policies of any third-party sites you visit.</p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. The "last updated" date at the top of this page indicates when the policy was last revised. We encourage you to review this page periodically.</p>
+
+      <h2>11. Contact us</h2>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact our privacy team:</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:privacy@monochromeandspace.com">privacy@monochromeandspace.com</a><br>
+        <strong>Postal address:</strong><br>
+        Monochrome &amp; Space — Privacy Team<br>
+        12 Granary Lane, Studio 4<br>
+        London, SE1 2TH, UK
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-grid">
+        <div>
+          <h4>MONOCHROME & SPACE</h4>
+          <p style="max-width: 35ch;">An independent journal of interior design and architecture. We publish in-depth articles for designers, architects, and curious homeowners.</p>
+        </div>
+        <div>
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Furniture</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Editorial Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Monochrome & Space. All rights reserved.</span>
+        <span>Made for readers, not algorithms.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- SEARCH (demo redirect / alert) ---
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+      if (searchBtn) {
+        searchBtn.addEventListener('click', () => {
+          const q = searchInput.value.trim();
+          if (q) {
+            alert('Search (demo): "' + q + '". On the live site, this would show filtered articles.');
+          } else {
+            alert('Please enter a search term.');
+          }
+        });
+      }
+      if (searchInput) {
+        searchInput.addEventListener('keyup', (e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            searchBtn.click();
+          }
+        });
+      }
+    })();
+  </script>
+
+  <!-- Schema.org markup for PrivacyPolicy -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy — Monochrome & Space",
+    "description": "Privacy Policy for Monochrome & Space. Learn how we collect, use, and protect your personal information.",
+    "url": "https://www.monochromeandspace.com/privacy.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Monochrome & Space",
+      "email": "privacy@monochromeandspace.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 Granary Lane, Studio 4",
+        "addressLocality": "London",
+        "postalCode": "SE1 2TH",
+        "addressCountry": "UK"
+      }
+    }
+  }
+  </script>
+</body>
+</html>

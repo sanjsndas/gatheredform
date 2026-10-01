@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — MONOCHROME & SPACE</title>
+  <meta name="description" content="About Monochrome & Space — an independent editorial on interior design, architecture, materials, and spatial planning. Meet the team and our editorial approach.">
+  <link rel="canonical" href="https://www.monochromeandspace.com/about.html">
+  <meta property="og:title" content="About — MONOCHROME & SPACE">
+  <meta property="og:description" content="Independent editorial on interior design and architecture. Long-form guides, design principles, and practical knowledge.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta property="og:url" content="https://www.monochromeandspace.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ----- RESET & BASE ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Georgia, serif;
+      background: #fbfaf8;
+      color: #1e1e1e;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    /* ----- TYPOGRAPHY ----- */
+    h1, h2, h3, h4, h5 {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #111;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #e2ddd7;
+      padding-bottom: 0.4rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    a {
+      color: #1e1e1e;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #b0a89e;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+    }
+
+    /* ----- LAYOUT ----- */
+    .site-wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ----- HEADER ----- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid #ddd8d2;
+      margin-bottom: 2rem;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      font-family: 'Georgia', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      border-bottom: none;
+      color: #0e0e0e;
+      line-height: 1.1;
+    }
+
+    .logo span {
+      font-weight: 300;
+      color: #8b7e72;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.8rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #5f554c;
+    }
+
+    .main-nav a {
+      border-bottom: none;
+      color: #5f554c;
+      font-weight: 450;
+    }
+
+    .main-nav a:hover {
+      color: #111;
+      border-bottom: 1px solid #b0a89e;
+    }
+
+    /* ----- SEARCH BAR ----- */
+    .search-row {
+      margin-top: 1.25rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #d6d0c9;
+      background: white;
+      border-radius: 30px;
+      padding: 0.2rem 0.2rem 0.2rem 1rem;
+      width: 260px;
+    }
+
+    .search-box input {
+      border: none;
+      background: transparent;
+      padding: 0.5rem 0;
+      font-size: 0.9rem;
+      width: 100%;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .search-box button {
+      background: #1e1e1e;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .search-box button:hover {
+      background: #3a3a3a;
+    }
+
+    /* ----- CATEGORY FILTER STRIP (simplified for about) ----- */
+    .category-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.2rem;
+      margin: 1.5rem 0 2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #e6e0d9;
+    }
+
+    .cat-btn {
+      background: none;
+      border: 1px solid transparent;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.3rem 0;
+      color: #5f554c;
+      cursor: pointer;
+      font-family: inherit;
+      border-bottom: 1px solid transparent;
+      transition: all 0.1s;
+    }
+
+    .cat-btn:hover {
+      color: #111;
+      border-bottom-color: #b0a89e;
+    }
+
+    .cat-btn.active {
+      color: #111;
+      border-bottom-color: #1e1e1e;
+      font-weight: 500;
+    }
+
+    /* ----- ABOUT PAGE SPECIFIC ----- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .about-content h2 {
+      margin-top: 2.5rem;
+    }
+
+    .about-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .about-content ul, .about-content ol {
+      margin: 0 0 1.5rem 1.5rem;
+    }
+
+    .about-content li {
+      margin-bottom: 0.4rem;
+    }
+
+    .about-content img {
+      width: 100%;
+      height: auto;
+      margin: 1.5rem 0;
+      border: 1px solid #eae4dd;
+    }
+
+    .about-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .about-sidebar .sidebar-block {
+      background: #ffffff;
+      border: 1px solid #eae4dd;
+      padding: 1.5rem 1.5rem 1.8rem;
+    }
+
+    .about-sidebar .sidebar-block h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid #e6e0d9;
+      padding-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .team-member {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .team-member:last-child {
+      margin-bottom: 0;
+    }
+
+    .team-avatar {
+      width: 56px;
+      height: 56px;
+      background: #d9d2ca;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+      font-size: 1.3rem;
+      color: #5f554c;
+      flex-shrink: 0;
+    }
+
+    .team-info p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #5f554c;
+      line-height: 1.5;
+    }
+
+    .team-info strong {
+      font-weight: 600;
+      color: #1e1e1e;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 0.8rem 0.5rem;
+      background: #f7f4f0;
+      border: 1px solid #eae4dd;
+    }
+
+    .stat-number {
+      font-family: Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #1e1e1e;
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #8b7e72;
+    }
+
+    .value-list {
+      list-style: none;
+      margin: 0 !important;
+    }
+
+    .value-list li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #f0ebe6;
+      font-size: 0.9rem;
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    .value-list li:last-child {
+      border-bottom: none;
+    }
+
+    .value-list li::before {
+      content: "—";
+      color: #b0a89e;
+    }
+
+    .editorial-note {
+      background: #f3efea;
+      border-left: 3px solid #b0a89e;
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #3d3630;
+    }
+
+    /* ----- FOOTER ----- */
+    .site-footer {
+      border-top: 1px solid #ddd8d2;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #5f554c;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-grid h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      color: #1e1e1e;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid a {
+      border-bottom: none;
+      color: #5f554c;
+    }
+
+    .footer-grid a:hover {
+      color: #111;
+      border-bottom: 1px solid #b0a89e;
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ece7e1;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #8b7e72;
+    }
+
+    /* ----- RESPONSIVE ----- */
+    @media (max-width: 1000px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .search-box {
+        width: 100%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="site-wrapper">
+      <div class="header-inner">
+        <a href="index.html" class="logo" id="logoLink">Gathered Form Notes <span>&</span> </a>
+        <nav class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </nav>
+      </div>
+      <div class="search-row">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search articles...">
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div class="site-wrapper">
+    <!-- Category filter strip (kept for consistency, but non-functional on about page) -->
+    <div class="category-strip" id="categoryStrip">
+      <button class="cat-btn active" data-cat="all">All</button>
+      <button class="cat-btn" data-cat="interior">Interior Design</button>
+      <button class="cat-btn" data-cat="architecture">Architecture</button>
+      <button class="cat-btn" data-cat="materials">Materials</button>
+      <button class="cat-btn" data-cat="lighting">Lighting</button>
+      <button class="cat-btn" data-cat="space">Space Planning</button>
+      <button class="cat-btn" data-cat="furniture">Furniture</button>
+      <button class="cat-btn" data-cat="modern">Modern Homes</button>
+      <button class="cat-btn" data-cat="small">Small Spaces</button>
+      <button class="cat-btn" data-cat="sustainable">Sustainable</button>
+    </div>
+
+    <!-- About content grid -->
+    <div class="about-grid">
+      <!-- LEFT: Main about text -->
+      <main class="about-content">
+        <h1>About the Journal</h1>
+        <p style="font-size: 1.2rem; color: #3d3630; max-width: 65ch; margin-bottom: 2rem;">Monochrome & Space is an independent editorial platform devoted to the quiet, considered aspects of interior design and architecture.</p>
+
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&h=500&fit=crop" alt="Warm neutral interior with layered textures and natural light">
+
+        <h2>Our Mission</h2>
+        <p>We publish long-form articles, practical guides, and critical essays for designers, architects, and homeowners who care about the details. In a media landscape saturated with quick trends and disposable inspiration, we prioritise depth, material knowledge, and the principles that make spaces endure.</p>
+        <p>Every article is written with the belief that good design is not about decoration, but about how a room works—how light moves through it, how materials age, how people live within its walls. We explore the intersections of craft, sustainability, and daily life.</p>
+
+        <div class="editorial-note">
+          “We write for readers, not algorithms. Our aim is to inform, not to overwhelm.”
+        </div>
+
+        <h2>What We Cover</h2>
+        <ul>
+          <li><strong>Interior Design</strong> — colour, texture, layering, and the psychology of space.</li>
+          <li><strong>Architecture</strong> — residential typologies, small lots, light, and air.</li>
+          <li><strong>Materials</strong> — lime plaster, raw oak, unpolished stone, and honest finishes.</li>
+          <li><strong>Lighting</strong> — the four layers, colour temperature, and fixture placement.</li>
+          <li><strong>Space Planning</strong> — circulation, zoning, and the 3-foot rule.</li>
+          <li><strong>Furniture</strong> — slow design, joinery, and the case for fewer, better pieces.</li>
+          <li><strong>Modern Homes</strong> — warmth without sterility, minimalism without coldness.</li>
+          <li><strong>Small Spaces</strong> — compact living, clever storage, and generous light.</li>
+          <li><strong>Sustainable Design</strong> — longevity, repairability, and low-impact specification.</li>
+        </ul>
+
+        <h2>Editorial Independence</h2>
+        <p>Monochrome & Space is entirely independent. We do not accept sponsored content, and we do not run advertising that compromises our editorial judgement. Our recommendations are based on research, experience, and a genuine interest in the built environment.</p>
+        <p>We are reader-supported. If you value our work, the best way to support us is to subscribe to our weekly newsletter and share our articles with others who might find them useful.</p>
+
+        <h2>Our Team</h2>
+        <p>We are a small, distributed editorial team with backgrounds in architecture, interior design, and journalism. Our contributors are based across Europe and North America, bringing a range of perspectives to every piece we publish.</p>
+
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000&h=500&fit=crop" alt="Modern residential architecture with courtyard and large windows">
+
+        <h2>How We Work</h2>
+        <p>Every article begins with a question. We research, interview where necessary, and draft slowly. We fact-check dimensions, material claims, and historical references. We believe that design writing should be as considered as the spaces it describes.</p>
+        <p>Our publishing schedule is deliberately unhurried. We would rather publish two thoughtful articles a month than ten superficial ones.</p>
+
+        <h2>Contact & Contributions</h2>
+        <p>We welcome pitches from writers, designers, and architects. If you have a story idea or would like to contribute, please visit our <a href="contact.html">contact page</a> or email us at <a href="mailto:editorial@monochromeandspace.com">editorial@monochromeandspace.com</a>.</p>
+        <p>For press enquiries, please use the same address and include “Press” in the subject line.</p>
+      </main>
+
+      <!-- RIGHT: Sidebar with team, stats, values -->
+      <aside class="about-sidebar">
+        <!-- Team block -->
+        <div class="sidebar-block">
+          <h3>Editorial Team</h3>
+          <div class="team-member">
+            <div class="team-avatar">EM</div>
+            <div class="team-info">
+              <strong>Elena Marchetti</strong>
+              <p>Editor-in-chief. Architect and writer covering the intersection of design, materials, and daily life.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-avatar">JH</div>
+            <div class="team-info">
+              <strong>Julian Hart</strong>
+              <p>Senior editor. Focuses on residential architecture and urban housing.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-avatar">MC</div>
+            <div class="team-info">
+              <strong>Mira Chen</strong>
+              <p>Contributing editor. Materials specialist and sustainability advocate.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-avatar">OL</div>
+            <div class="team-info">
+              <strong>Oscar Lindqvist</strong>
+              <p>Lighting and interiors contributor. Based in Stockholm.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats block -->
+        <div class="sidebar-block">
+          <h3>By the Numbers</h3>
+          <div class="stat-grid">
+            <div class="stat-item">
+              <div class="stat-number">120+</div>
+              <div class="stat-label">Articles</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">9</div>
+              <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">12k</div>
+              <div class="stat-label">Subscribers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2025</div>
+              <div class="stat-label">Founded</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Values block -->
+        <div class="sidebar-block">
+          <h3>What We Value</h3>
+          <ul class="value-list">
+            <li>Depth over speed</li>
+            <li>Material honesty</li>
+            <li>Practical knowledge</li>
+            <li>Independent voice</li>
+            <li>Reader support</li>
+            <li>Longevity in design</li>
+          </ul>
+        </div>
+
+        <!-- Newsletter mini (consistent with homepage) -->
+        <div class="sidebar-block newsletter-mini">
+          <h4>The Weekly Edit</h4>
+          <p>One thoughtful email every Friday. No noise, just design.</p>
+          <input type="email" placeholder="Your email" id="sidebarEmail">
+          <button id="sidebarSubscribe">Subscribe</button>
+          <p style="font-size:0.7rem; margin-top:0.5rem; color:#8b7e72;">We never share your address.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-grid">
+        <div>
+          <h4>MONOCHROME & SPACE</h4>
+          <p style="max-width: 35ch;">An independent journal of interior design and architecture. We publish in-depth articles for designers, architects, and curious homeowners.</p>
+        </div>
+        <div>
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Furniture</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Editorial Policy</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Monochrome & Space. All rights reserved.</span>
+        <span>Made for readers, not algorithms.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- NEWSLETTER (demo only) ---
+      function handleSubscribe(emailInputId) {
+        const input = document.getElementById(emailInputId);
+        if (!input) return;
+        const email = input.value.trim();
+        if (email && email.includes('@')) {
+          alert('Thank you for subscribing! (This is a demo — no data is stored.)');
+          input.value = '';
+        } else {
+          alert('Please enter a valid email address.');
+        }
+      }
+
+      document.getElementById('sidebarSubscribe')?.addEventListener('click', () => handleSubscribe('sidebarEmail'));
+
+      // --- CATEGORY FILTER (visual only on about page) ---
+      const categoryStrip = document.getElementById('categoryStrip');
+      categoryStrip.addEventListener('click', (e) => {
+        const btn = e.target.closest('.cat-btn');
+        if (!btn) return;
+        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        // On about page, just update active state; no filtering
+      });
+
+      // --- SEARCH (demo alert, since no articles to filter) ---
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+      searchBtn.addEventListener('click', () => {
+        const query = searchInput.value.trim();
+        if (query) {
+          alert(`Search demo: you searched for "${query}". On the homepage, this would filter articles.`);
+        }
+      });
+      searchInput.addEventListener('keyup', (e) => {
+        if (e.key === 'Enter') {
+          searchBtn.click();
+        }
+      });
+    })();
+  </script>
+
+  <!-- Schema.org markup for AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Monochrome & Space",
+    "description": "Independent editorial on interior design, architecture, materials, lighting, and spatial planning.",
+    "url": "https://www.monochromeandspace.com/about.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Monochrome & Space",
+      "description": "An independent journal of interior design and architecture.",
+      "foundingDate": "2025",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 4
+      }
+    }
+  }
+  </script>
+</body>
+</html>
